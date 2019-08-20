@@ -496,6 +496,8 @@ type VsphereCloudProvider struct {
 type GlobalVsphereOpts struct {
 	User              string `json:"user,omitempty" yaml:"user,omitempty" ini:"user,omitempty"`
 	Password          string `json:"password,omitempty" yaml:"password,omitempty" ini:"password,omitempty" norman:"type=password"`
+	SecretName        string `json:"secret-name,omitempty" yaml:"secret-name,omitempty" ini:"secret-namespace,omitempty"`
+	SecretNamespace   string `json:"secret-namespace,omitempty" yaml:"secret-namespace,omitempty" ini:"secret-namespace,omitempty"`
 	VCenterIP         string `json:"server,omitempty" yaml:"server,omitempty" ini:"server,omitempty"`
 	VCenterPort       string `json:"port,omitempty" yaml:"port,omitempty" ini:"port,omitempty"`
 	InsecureFlag      bool   `json:"insecure-flag,omitempty" yaml:"insecure-flag,omitempty" ini:"insecure-flag,omitempty"`
